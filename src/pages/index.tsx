@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import {Button} from '../components/SimpleButton'
+import {Logo} from '../components/Logo'
 
 export default function Home() {
   return (
@@ -10,6 +12,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Button label="hello"/>
+        <Logo type='SVG'/>
+        <Logo type='SMALL_PNG'/>
+        <Logo type='LARGE_PNG'/>
+        <Logo type='BACKGROUND'/>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
